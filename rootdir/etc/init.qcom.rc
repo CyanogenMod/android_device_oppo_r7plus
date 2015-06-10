@@ -30,3 +30,4 @@ import init.qcom-common.rc
 service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
+    group system input
