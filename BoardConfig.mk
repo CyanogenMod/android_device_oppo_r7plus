@@ -17,6 +17,7 @@
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
 # Kernel
+BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_r7plus_defconfig
 
 # Partition info
