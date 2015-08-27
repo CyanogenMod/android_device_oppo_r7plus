@@ -28,5 +28,8 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25769803776
 
+# DTB image generation
+TARGET_NEEDS_V3_DTB_IMAGE := true
+
 # inherit from the proprietary version
 -include vendor/oppo/r7plus/BoardConfigVendor.mk
