@@ -32,5 +32,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 25769803776
 # DTB image generation
 TARGET_NEEDS_V3_DTB_IMAGE := true
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+
 # inherit from the proprietary version
 -include vendor/oppo/r7plus/BoardConfigVendor.mk
