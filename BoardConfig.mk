@@ -16,6 +16,9 @@
 
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := r7plus,r7plusf
+
 # Kernel
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_r7plus_defconfig
