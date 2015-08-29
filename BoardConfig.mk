@@ -16,8 +16,13 @@
 
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
+DEVICE_PATH := device/oppo/r7
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := r7plus,r7plusf
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
 BOARD_RAMDISK_OFFSET := 0x01000000
