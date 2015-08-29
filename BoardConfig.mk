@@ -16,7 +16,7 @@
 
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oppo/r7
+DEVICE_PATH := device/oppo/r7plus
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := r7plus,r7plusf
