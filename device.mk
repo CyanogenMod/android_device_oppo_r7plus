@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/oppo/r7plus
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 $(call inherit-product-if-exists, vendor/oppo/r7plus/r7plus-vendor.mk)
 
 # Inherit from msm8939-common
