@@ -33,4 +33,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=OPPO/R7plusf/R7Plusm:5.1.1/LMY47V/1437558400:user/release-keys \
-    PRIVATE_BUILD_DESC="msm8916_64-user 5.1.1 LMY47V eng.root.20150807.023105 release-keys"
+    PRIVATE_BUILD_DESC="msm8916_64-user 5.1.1 LMY47V eng.root.20150807.023105 release-keys" \
+    TARGET_DEVICE="R7plusf"
