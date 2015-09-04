@@ -195,9 +195,10 @@
     <path name="deep-buffer-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
+
 	<!--tfa9890 added John.Xu-->
     <path name="deep-buffer-playback i2s">
-	<ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback i2s-slimbus">
@@ -209,15 +210,19 @@
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 	<!--tfa9890 End-->
+
     <path name="deep-buffer-playback sec_i2s">
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
+
     <path name="low-latency-playback i2s-slimbus">
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
+
     <path name="low-latency-playback sec_i2s">
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
+
     <path name="deep-buffer-playback bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -309,6 +314,7 @@
     <path name="audio-record">
         <ctl name="MultiMedia1 Mixer TERT_MI2S_TX" value="1" />
     </path>
+
     <!-- listen -->
     <ctl name="LSM1 MUX" value="None" />
     <ctl name="LSM2 MUX" value="None" />
@@ -605,26 +611,31 @@
         <ctl name="RX3 MIX1 INP1" value="RX1" />
         <ctl name="SPK DAC Switch" value="1" />
     </path>
+
     <!--add for tfa9890-->
     <path name="tfa9890_speaker">
         <ctl name="Spk_Rec_SW" value="speaker_on" />
     </path>
+
     <path name="tfa9890_receiver">
         <ctl name="Spk_Rec_SW" value="receiver_on" />
     </path>
     <!--tfa9890 end-->
+
     <path name="main-mic-test">
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="DEC1 Volume" value="100" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
         <ctl name="ADC1 Volume" value="6" />
     </path>
+
     <path name="sec-mic-test">
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="DEC1 Volume" value="100" />
         <ctl name="ADC3 Volume" value="6" />
     </path>
+
     <path name="anc-mic-test">
     </path>
 
