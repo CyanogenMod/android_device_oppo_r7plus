@@ -187,16 +187,7 @@
     <ctl name="MI2S_DL_HL Switch" value="0" />
     <!-- ADSP testfwk end-->
 
-    <path name="bt-sco-wb-samplerate">
-        <ctl name="Internal BTSCO SampleRate" value="16000" />
-    </path>
-
-    <!-- These are audio route (FE to BE) specific mixer settings -->
-    <path name="deep-buffer-playback">
-        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-    </path>
-
-	<!--tfa9890 specific paths-->
+    <!--tfa9890 specific paths-->
     <path name="deep-buffer-playback i2s">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
@@ -222,6 +213,16 @@
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 	<!--tfa9890 End-->
+
+    <path name="bt-sco-wb-samplerate">
+        <ctl name="Internal BTSCO SampleRate" value="16000" />
+    </path>
+
+    <!-- These are audio route (FE to BE) specific mixer settings -->
+    <path name="deep-buffer-playback">
+        <!--<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />-->
+        <path name="deep-buffer-playback i2s" />
+    </path>
 
     <path name="deep-buffer-playback bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="1" />
@@ -249,7 +250,8 @@
     </path>
 
     <path name="low-latency-playback">
-        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+        <!--<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />-->
+        <path name="low-latency-playback i2s" />
     </path>
 
     <path name="low-latency-playback bt-sco">
