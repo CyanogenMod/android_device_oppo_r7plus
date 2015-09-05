@@ -25,6 +25,7 @@ TARGET_OTA_ASSERT_DEVICE := r7plus,r7plusf,R7plusf
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Kernel
+BOARD_KERNEL_CMDLINE += earlyprintk ramoops.mem_address=0x9ff00000 ramoops.mem_size=0x400000
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_r7plus_defconfig
 
