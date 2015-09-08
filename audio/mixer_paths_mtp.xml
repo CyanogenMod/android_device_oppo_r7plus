@@ -220,8 +220,7 @@
 
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
-        <!--<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />-->
-        <path name="deep-buffer-playback i2s" />
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback bt-sco">
@@ -250,8 +249,7 @@
     </path>
 
     <path name="low-latency-playback">
-        <!--<ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />-->
-        <path name="low-latency-playback i2s" />
+        <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
     <path name="low-latency-playback bt-sco">
@@ -280,11 +278,11 @@
     </path>
 
     <path name="compress-offload-playback">
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback sec_i2s">
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback bt-sco">
