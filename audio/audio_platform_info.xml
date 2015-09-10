@@ -34,6 +34,7 @@
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="sec_i2s" />
         <device name="SND_DEVICE_OUT_SPEAKER" backend="i2s" />
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="i2s" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="i2s-slimbus" />
     </backend_names>
 
