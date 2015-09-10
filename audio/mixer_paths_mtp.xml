@@ -67,6 +67,7 @@
     <ctl name="AK4375 BICK Frequency Select" value="32fs" />
     <ctl name="AK4375 HPL Mixer LDACL" value="0" />
     <ctl name="AK4375 HPR Mixer RDACR" value="0" />
+    <ctl name="NXP ModeL" value="0" />
 
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia1" value="0" />
@@ -357,6 +358,7 @@
     <path name="voice-call i2s">
         <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
+        <ctl name="NXP ModeL" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
@@ -383,6 +385,7 @@
     <path name="voice2-call i2s">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer TERT_MI2S_TX_Voice2" value="1" />
+        <ctl name="NXP ModeL" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
@@ -532,6 +535,7 @@
     <path name="compress-voip-call i2s">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
+        <ctl name="NXP ModeL" value="1" />
     </path>
 
     <path name="compress-voip-call sec_i2s">
