@@ -188,33 +188,6 @@
     <ctl name="MI2S_DL_HL Switch" value="0" />
     <!-- ADSP testfwk end-->
 
-    <!--tfa9890 specific paths-->
-    <path name="deep-buffer-playback i2s">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-    </path>
-
-    <path name="deep-buffer-playback i2s-slimbus">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-    </path>
-
-    <path name="deep-buffer-playback sec_i2s">
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
-    </path>
-
-    <path name="low-latency-playback i2s">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
-    </path>
-
-    <path name="low-latency-playback i2s-slimbus">
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
-    </path>
-
-    <path name="low-latency-playback sec_i2s">
-        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
-    </path>
-	<!--tfa9890 End-->
-
     <path name="bt-sco-wb-samplerate">
         <ctl name="Internal BTSCO SampleRate" value="16000" />
     </path>
@@ -222,6 +195,19 @@
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback speaker">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-headphones">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <path name="deep-buffer-playback headphones">
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
     <path name="deep-buffer-playback bt-sco">
@@ -253,6 +239,18 @@
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
+    <path name="low-latency-playback speaker">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback speaker-and-headphones">
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
+    <path name="low-latency-playback headphones">
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    </path>
+
     <path name="low-latency-playback bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -282,12 +280,16 @@
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
-    <path name="compress-offload-playback sec_i2s">
+    <path name="compress-offload-playback speaker">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    </path>
+
+    <path name="compress-offload-playback speaker-and-headphones">
         <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
-    <path name="compress-offload-playback i2s">
-        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    <path name="compress-offload-playback headphones">
+        <ctl name="SEC_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 
     <path name="compress-offload-playback bt-sco">
@@ -355,14 +357,14 @@
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
 
-    <path name="voice-call i2s">
+    <path name="voice-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
         <ctl name="NXP ModeL" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
-    <path name="voice-call sec_i2s">
+    <path name="voice-call headphones">
         <ctl name="SEC_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
     </path>
@@ -382,14 +384,14 @@
         <ctl name="Voice_Tx Mixer AFE_PCM_TX_Voice" value="1" />
     </path>
 
-    <path name="voice2-call i2s">
+    <path name="voice2-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer TERT_MI2S_TX_Voice2" value="1" />
         <ctl name="NXP ModeL" value="1" />
         <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
-    <path name="voice2-call sec_i2s">
+    <path name="voice2-call headphones">
         <ctl name="SEC_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer TERT_MI2S_TX_Voice2" value="1" />
     </path>
@@ -532,13 +534,13 @@
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
     </path>
 
-    <path name="compress-voip-call i2s">
+    <path name="compress-voip-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
         <ctl name="NXP ModeL" value="1" />
     </path>
 
-    <path name="compress-voip-call sec_i2s">
+    <path name="compress-voip-call headphones">
         <ctl name="SEC_MI2S_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer TERT_MI2S_TX_Voip" value="1" />
     </path>
