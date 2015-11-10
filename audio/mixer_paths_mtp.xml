@@ -192,6 +192,10 @@
         <ctl name="Internal BTSCO SampleRate" value="16000" />
     </path>
 
+    <path name="echo-reference">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="QUAT_MI2S_TX" />
+    </path>
+
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1" />
@@ -661,7 +665,7 @@
 
     <path name="handset-mic">
         <path name="adc1" />
-        <ctrl name="DEC1 Volume" value="100" />
+        <ctl name="DEC1 Volume" value="100" />
         <ctl name="MI2S_RX Format" value="S16_LE" />
     </path>
 
@@ -815,10 +819,6 @@
 
     <path name="speaker-stereo-dmic-ef">
         <path name="speaker-dmic-endfire" />
-    </path>
-
-    <path name="echo-reference">
-        <ctl name="AUDIO_REF_EC_UL1 MUX" value="I2S_RX" />
     </path>
 
     <!-- TTY devices -->
