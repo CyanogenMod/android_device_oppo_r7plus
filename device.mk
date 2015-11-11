@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8916 \
     fingerprintd
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.qcom.rc
+
 # Input configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
