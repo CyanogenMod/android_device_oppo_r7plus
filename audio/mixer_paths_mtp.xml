@@ -184,10 +184,6 @@
     <ctl name="IIR1 Enable Band5" value="0" />
     <!-- IIR -->
 
-    <!-- ADSP testfwk -->
-    <ctl name="MI2S_DL_HL Switch" value="0" />
-    <!-- ADSP testfwk end-->
-
     <path name="bt-sco-wb-samplerate">
         <ctl name="Internal BTSCO SampleRate" value="16000" />
     </path>
@@ -360,8 +356,6 @@
     <path name="voice-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer TERT_MI2S_TX_Voice" value="1" />
-        <ctl name="NXP ModeL" value="1" />
-        <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
     <path name="voice-call headphones">
@@ -387,8 +381,6 @@
     <path name="voice2-call speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer Voice2" value="1" />
         <ctl name="Voice2_Tx Mixer TERT_MI2S_TX_Voice2" value="1" />
-        <ctl name="NXP ModeL" value="1" />
-        <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
     </path>
 
     <path name="voice2-call headphones">
@@ -622,33 +614,6 @@
         <ctl name="SPK DAC Switch" value="1" />
     </path>
 
-    <!--add for tfa9890-->
-    <path name="tfa9890_speaker">
-        <ctl name="Spk_Rec_SW" value="speaker_on" />
-    </path>
-
-    <path name="tfa9890_receiver">
-        <ctl name="Spk_Rec_SW" value="receiver_on" />
-    </path>
-    <!--tfa9890 end-->
-
-    <path name="main-mic-test">
-        <ctl name="DEC1 MUX" value="ADC1" />
-        <ctl name="DEC1 Volume" value="100" />
-        <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="ADC1 Volume" value="6" />
-    </path>
-
-    <path name="sec-mic-test">
-        <ctl name="DEC1 MUX" value="ADC2" />
-        <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="DEC1 Volume" value="100" />
-        <ctl name="ADC3 Volume" value="6" />
-    </path>
-
-    <path name="anc-mic-test">
-    </path>
-
     <path name="speaker-mic">
         <ctl name="DEC1 MUX" value="ADC2" />
         <ctl name="ADC2 MUX" value="INP3" />
@@ -717,6 +682,7 @@
 
     <path name="voice-speaker">
         <path name="speaker" />
+        <ctl name="NXP ModeL" value="1" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -739,9 +705,6 @@
     <path name="speaker-and-headphones">
         <path name="headphones" />
         <path name="speaker" />
-    </path>
-    <path name="headphones-and-tfa9890">
-        <path name="headphones" />
     </path>
 
     <path name="usb-headphones">
@@ -867,10 +830,6 @@
 
     <path name="listen-handset-mic">
         <path name="adc1" />
-    </path>
-
-    <path name="ADSP testfwk">
-        <ctl name="MI2S_DL_HL Switch" value="1" />
     </path>
 
 </mixer>
