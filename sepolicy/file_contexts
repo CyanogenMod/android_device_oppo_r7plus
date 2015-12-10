@@ -1,0 +1,5 @@
+/dev/fpc1020                                                    u:object_r:fingerprint_device:s0
+/data/misc/fp                                                   u:object_r:fingerprint_dir:s0
+/data/misc/fp/metadata                                          u:object_r:fingerprint_metadata:s0
+/data/misc/fp/cac_data                                          u:object_r:fingerprint_data:s0
+/data/misc/fp/sfs(/.*)?                                         u:object_r:fingerprint_data:s0

@@ -1,0 +1,4 @@
+type fingerprint_dir, file_type;
+type fingerprint_data, file_type;
+type fingerprint_metadata, file_type;
+type fingerprint_device, dev_type;
