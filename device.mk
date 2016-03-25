@@ -65,7 +65,12 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.qcom.rc
+
+# Factory reset protection
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Input configuration
 PRODUCT_COPY_FILES += \
