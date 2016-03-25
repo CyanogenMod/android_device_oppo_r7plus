@@ -21,6 +21,9 @@ DEVICE_PATH := device/oppo/r7plus
 # Assert
 TARGET_OTA_ASSERT_DEVICE := r7plus,r7plusf,R7plusf
 
+# Assertions
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
