@@ -41,7 +41,7 @@ for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
     FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
     DEST=${PARSING_ARRAY[1]}
     if [ -n "$DEST" ]; then
-        FILE=$DEST
+      FILE=$DEST
     fi
     echo "    $OUTDIR/proprietary/$FILE:system/$FILE$LINEEND" >> $MAKEFILE
   fi
