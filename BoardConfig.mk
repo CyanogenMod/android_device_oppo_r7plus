@@ -32,7 +32,6 @@ TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v3
-BOARD_KERNEL_CMDLINE += ramoops.mem_address=0x9ff00000 ramoops.mem_size=0x400000
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x01000000
 TARGET_KERNEL_CONFIG := cyanogenmod_r7plus_defconfig
 
