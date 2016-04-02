@@ -297,6 +297,7 @@ vendor/lib/libOmxVdecHevc.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Perf
+bin/msm_irqbalance
 vendor/bin/perfd
 vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
