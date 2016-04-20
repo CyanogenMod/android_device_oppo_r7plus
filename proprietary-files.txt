@@ -407,6 +407,3 @@ vendor/lib/libTimeService.so
 etc/firmware/tp/15018/15018_FW_S3508_Samsung.img
 etc/firmware/tp/15018/15018_FW_S3508_Samsung_Old.img
 etc/firmware/tp/15018/15018_Limit_Samsung.img
-
-# Wifi
-bin/cnss-daemon
