@@ -622,16 +622,6 @@
         <ctl name="SPK DAC Switch" value="1" />
     </path>
 
-    <!--add for tfa9890-->
-    <path name="tfa9890_speaker">
-        <ctl name="Spk_Rec_SW" value="speaker_on" />
-    </path>
-
-    <path name="tfa9890_receiver">
-        <ctl name="Spk_Rec_SW" value="receiver_on" />
-    </path>
-    <!--tfa9890 end-->
-
     <path name="main-mic-test">
         <ctl name="DEC1 MUX" value="ADC1" />
         <ctl name="DEC1 Volume" value="100" />
@@ -739,9 +729,6 @@
     <path name="speaker-and-headphones">
         <path name="headphones" />
         <path name="speaker" />
-    </path>
-    <path name="headphones-and-tfa9890">
-        <path name="headphones" />
     </path>
 
     <path name="usb-headphones">
