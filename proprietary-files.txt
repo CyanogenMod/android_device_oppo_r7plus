@@ -59,20 +59,10 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_imx278.so
-vendor/lib/libmmcamera_ov8858_15011.so
-vendor/lib/libmmcamera_ov8858_15085.so
-vendor/lib/libmmcamera_ov8858.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_s5k3m2_15011.so
-vendor/lib/libmmcamera_s5k3m2.so
-vendor/lib/libmmcamera_sunny_cat24c64_eeprom.so
-vendor/lib/libmmcamera_sunny_f13s01l_eeprom.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_truly_cm7700_eeprom.so
-vendor/lib/libmmcamera_truly_s5k3h7_eeprom.so
 vendor/lib/libmmcamera_wavelet_lib.so
 vendor/lib/libmmipl.so
 vendor/lib/libmmjpeg.so
@@ -81,27 +71,9 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
 
 # Camera autofocus
-vendor/lib/libactuator_dw9714_camcorder.so
-vendor/lib/libactuator_dw9714_camera.so
-vendor/lib/libactuator_dw9714.so
-vendor/lib/libactuator_dw9714_v78s85_camcorder.so
-vendor/lib/libactuator_dw9714_v78s85_camera.so
-vendor/lib/libactuator_dw9714_v78s85.so
-vendor/lib/libactuator_dw9718_camcorder.so
-vendor/lib/libactuator_dw9718_camera.so
-vendor/lib/libactuator_dw9718.so
-vendor/lib/libactuator_dw9800w_15062_camcorder.so
-vendor/lib/libactuator_dw9800w_15062_camera.so
-vendor/lib/libactuator_dw9800w_15062.so
 vendor/lib/libactuator_dw9800w_camcorder.so
 vendor/lib/libactuator_dw9800w_camera.so
-vendor/lib/libactuator_dw9800w_s5k3m2_camcorder.so
-vendor/lib/libactuator_dw9800w_s5k3m2_camera.so
-vendor/lib/libactuator_dw9800w_s5k3m2.so
 vendor/lib/libactuator_dw9800w.so
-vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so
-vendor/lib/libactuator_rohm_bu64243gwz_camera.so
-vendor/lib/libactuator_rohm_bu64243gwz.so
 
 # Camera chromatix
 vendor/lib/libchromatix_imx278_common_panorama.so
@@ -119,15 +91,6 @@ vendor/lib/libchromatix_imx278_snapshot_panorama.so
 vendor/lib/libchromatix_imx278_snapshot.so
 vendor/lib/libchromatix_imx278_video_binning.so
 vendor/lib/libchromatix_imx278_video_hdr.so
-vendor/lib/libchromatix_ov8858_15011_common.so
-vendor/lib/libchromatix_ov8858_15011_default_video.so
-vendor/lib/libchromatix_ov8858_15011_liveshot.so
-vendor/lib/libchromatix_ov8858_15011_preview_binding.so
-vendor/lib/libchromatix_ov8858_15011_preview_fb.so
-vendor/lib/libchromatix_ov8858_15011_preview.so
-vendor/lib/libchromatix_ov8858_15011_small_video.so
-vendor/lib/libchromatix_ov8858_15011_snapshot_fb.so
-vendor/lib/libchromatix_ov8858_15011_snapshot.so
 vendor/lib/libchromatix_ov8858_common.so
 vendor/lib/libchromatix_ov8858_default_video.so
 vendor/lib/libchromatix_ov8858_hfr_120fps.so
@@ -140,40 +103,19 @@ vendor/lib/libchromatix_ov8858_preview.so
 vendor/lib/libchromatix_ov8858_small_video.so
 vendor/lib/libchromatix_ov8858_snapshot_fb.so
 vendor/lib/libchromatix_ov8858_snapshot.so
-vendor/lib/libchromatix_s5k3m2_15011_common_panorama.so
-vendor/lib/libchromatix_s5k3m2_15011_common.so
-vendor/lib/libchromatix_s5k3m2_15011_default_video.so
-vendor/lib/libchromatix_s5k3m2_15011_hfr_120fps.so
-vendor/lib/libchromatix_s5k3m2_15011_hfr_60fps.so
-vendor/lib/libchromatix_s5k3m2_15011_hfr_90fps.so
-vendor/lib/libchromatix_s5k3m2_15011_liveshot.so
-vendor/lib/libchromatix_s5k3m2_15011_preview_panorama.so
-vendor/lib/libchromatix_s5k3m2_15011_preview.so
-vendor/lib/libchromatix_s5k3m2_15011_small_video.so
-vendor/lib/libchromatix_s5k3m2_15011_snapshot_panorama.so
-vendor/lib/libchromatix_s5k3m2_15011_snapshot.so
-vendor/lib/libchromatix_s5k3m2_15011_video_hd.so
-vendor/lib/libchromatix_s5k3m2_15011_zsl.so
-vendor/lib/libchromatix_s5k3m2_common_panorama.so
-vendor/lib/libchromatix_s5k3m2_common.so
-vendor/lib/libchromatix_s5k3m2_default_video.so
-vendor/lib/libchromatix_s5k3m2_hfr_120fps.so
-vendor/lib/libchromatix_s5k3m2_hfr_60fps.so
-vendor/lib/libchromatix_s5k3m2_hfr_90fps.so
-vendor/lib/libchromatix_s5k3m2_liveshot.so
-vendor/lib/libchromatix_s5k3m2_preview_panorama.so
-vendor/lib/libchromatix_s5k3m2_preview.so
-vendor/lib/libchromatix_s5k3m2_small_video.so
-vendor/lib/libchromatix_s5k3m2_snapshot_panorama.so
-vendor/lib/libchromatix_s5k3m2_snapshot.so
-vendor/lib/libchromatix_s5k3m2_video_hd.so
-vendor/lib/libchromatix_s5k3m2_zsl.so
+
+# Camera eeprom
+vendor/lib/libmmcamera_sunny_cat24c64_eeprom.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
+
+# Camera sensors
+vendor/lib/libmmcamera_imx278.so
+vendor/lib/libmmcamera_ov8858.so
 
 # DRM
 bin/qseecomd
@@ -374,11 +316,7 @@ vendor/lib64/libxml.so
 # Sensors
 bin/psensord
 lib64/hw/sensors.hal.tof.so
-vendor/lib/libcalmodule_gyroscope.so
-vendor/lib/libcalmodule_yamaha.so
-vendor/lib64/libcalmodule_gyroscope.so
 vendor/lib64/libcalmodule_memsic.so
-vendor/lib64/libcalmodule_yamaha.so
 
 # Signed Venus (media) firmware
 etc/firmware/venus.b00
