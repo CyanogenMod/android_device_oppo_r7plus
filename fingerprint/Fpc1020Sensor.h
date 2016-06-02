@@ -37,16 +37,19 @@ class Fpc1020Sensor {
         typedef void (*AcquiredCb) (void *data);
         typedef void (*EnrollmentProgressCb) (const EnrolledFingerprint *fp, int stepsRemaining, void *data);
         typedef void (*AuthenticateResultCb) (const EnrolledFingerprint *fp, uint32_t userId, void *data);
+        typedef void (*RemoveCb) (const EnrolledFingerprint *fp, void *data);
         typedef void (*ErrorCb) (int result, void *data);
 
         Fpc1020Sensor(AcquiredCb acquiredCb, EnrollmentProgressCb enrollmentCb,
-                AuthenticateResultCb authenticateCb, ErrorCb errorCb, void *cbData) :
+                AuthenticateResultCb authenticateCb, RemoveCb removeCb,
+                ErrorCb errorCb, void *cbData) :
             mQseecom("fingerprints", 512),
             mFpcFd(-1),
             mCancelledDueToTimeout(false),
             mAcquiredCb(acquiredCb),
             mEnrollmentCb(enrollmentCb),
             mAuthenticateCb(authenticateCb),
+            mRemoveCb(removeCb),
             mErrorCb(errorCb),
             mCbData(cbData),
             mAuthenticatorId(0)
@@ -156,6 +159,7 @@ class Fpc1020Sensor {
         AcquiredCb mAcquiredCb;
         EnrollmentProgressCb mEnrollmentCb;
         AuthenticateResultCb mAuthenticateCb;
+        RemoveCb mRemoveCb;
         ErrorCb mErrorCb;
         void * mCbData;
 

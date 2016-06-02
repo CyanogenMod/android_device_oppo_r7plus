@@ -198,15 +198,6 @@ static int fingerprint_remove(struct fingerprint_device *dev,
 
     device->impl->goToIdleState();
 
-    fingerprint_notify_t notify = fingerprint_get_notify(dev);
-    if (notify) {
-        fingerprint_msg_t msg;
-        msg.type = FINGERPRINT_TEMPLATE_REMOVED;
-        msg.data.removed.finger.fid = fp.fid;
-        msg.data.removed.finger.gid = fp.gid;
-        notify(&msg);
-    }
-
     return 0;
 }
 
@@ -286,6 +277,20 @@ static void fingerprint_cb_error(int result, void *data)
     }
 }
 
+static void fingerprint_cb_removed(const Fpc1020Sensor::EnrolledFingerprint *fp,
+                                   void *data)
+{
+    struct fingerprint_device *dev = (struct fingerprint_device *) data;
+    fingerprint_notify_t notify = fingerprint_get_notify(dev);
+    if (notify) {
+        fingerprint_msg_t msg;
+        msg.type = FINGERPRINT_TEMPLATE_REMOVED;
+        msg.data.removed.finger.fid = fp->fid;
+        msg.data.removed.finger.gid = fp->gid;
+        notify(&msg);
+    }
+}
+
 static int fingerprint_open(const hw_module_t* module,
                             const char __unused *id,
                             hw_device_t** device)
@@ -303,6 +308,7 @@ static int fingerprint_open(const hw_module_t* module,
     dev->impl = new Fpc1020Sensor(fingerprint_cb_acquired,
             fingerprint_cb_enrollment_progress,
             fingerprint_cb_authenticate,
+            fingerprint_cb_removed,
             fingerprint_cb_error, dev);
     if (!dev->impl) {
         delete dev;

@@ -183,6 +183,7 @@ int Fpc1020Sensor::removeId(EnrolledFingerprint& fp)
 
     if (ret == 0) {
         mFpMetadata.removeItem(fp.fid);
+        mRemoveCb(&fp, mCbData);
         if (mFpMetadata.isEmpty()) {
             mAuthenticatorId = 0;
         }
@@ -385,6 +386,11 @@ int Fpc1020Sensor::clearEnrolledFingerprints()
         ret = sendCommand(CLIENT_CMD_REMOVE_ID);
         if (ret) {
             ALOGE("Removing fingerprint ID %d failed (%d)", id, ret);
+        } else {
+            ssize_t index = mFpMetadata.indexOfKey(id);
+            uint32_t gid = index >= 0 ? mFpMetadata.valueAt(index).gid : 0;
+            EnrolledFingerprint fp(id, gid);
+            mRemoveCb(&fp, mCbData);
         }
     }
 
