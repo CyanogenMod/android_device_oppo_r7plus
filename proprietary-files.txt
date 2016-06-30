@@ -9,7 +9,6 @@ etc/firmware/left.tfa9890.config
 etc/firmware/left.tfa9890.speaker
 etc/firmware/left.tfa9890_music_table.eq
 etc/firmware/left.tfa9890_music_table.preset
-etc/firmware/left.tfa9890_n1b12.patch
 etc/firmware/left.tfa9890_n1c2.patch
 etc/firmware/left.tfa9890_voice_table.eq
 etc/firmware/left.tfa9890_voice_table.preset
