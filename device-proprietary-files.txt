@@ -1,0 +1,69 @@
+# Audio
+etc/firmware/left.tfa9890.config
+etc/firmware/left.tfa9890.speaker
+etc/firmware/left.tfa9890_music_table.eq
+etc/firmware/left.tfa9890_music_table.preset
+etc/firmware/left.tfa9890_n1c2.patch
+etc/firmware/left.tfa9890_voice_table.eq
+etc/firmware/left.tfa9890_voice_table.preset
+
+# Camera
+vendor/lib/libimage_stability.so
+
+# Camera autofocus
+vendor/lib/libactuator_dw9800w_camcorder.so
+vendor/lib/libactuator_dw9800w_camera.so
+vendor/lib/libactuator_dw9800w.so
+
+# Camera chromatix
+vendor/lib/libchromatix_imx278_common_panorama.so
+vendor/lib/libchromatix_imx278_common.so
+vendor/lib/libchromatix_imx278_default_video.so
+vendor/lib/libchromatix_imx278_hfr_120.so
+vendor/lib/libchromatix_imx278_hfr_60.so
+vendor/lib/libchromatix_imx278_liveshot.so
+vendor/lib/libchromatix_imx278_preview_binning.so
+vendor/lib/libchromatix_imx278_preview_panorama.so
+vendor/lib/libchromatix_imx278_preview.so
+vendor/lib/libchromatix_imx278_small_video.so
+vendor/lib/libchromatix_imx278_snapshot_hdr.so
+vendor/lib/libchromatix_imx278_snapshot_panorama.so
+vendor/lib/libchromatix_imx278_snapshot.so
+vendor/lib/libchromatix_imx278_video_binning.so
+vendor/lib/libchromatix_imx278_video_hdr.so
+vendor/lib/libchromatix_ov8858_common.so
+vendor/lib/libchromatix_ov8858_default_video.so
+vendor/lib/libchromatix_ov8858_hfr_120fps.so
+vendor/lib/libchromatix_ov8858_hfr_60fps.so
+vendor/lib/libchromatix_ov8858_hfr_90fps.so
+vendor/lib/libchromatix_ov8858_liveshot.so
+vendor/lib/libchromatix_ov8858_preview_binding.so
+vendor/lib/libchromatix_ov8858_preview_fb.so
+vendor/lib/libchromatix_ov8858_preview.so
+vendor/lib/libchromatix_ov8858_small_video.so
+vendor/lib/libchromatix_ov8858_snapshot_fb.so
+vendor/lib/libchromatix_ov8858_snapshot.so
+
+# Camera eeprom
+vendor/lib/libmmcamera_sunny_cat24c64_eeprom.so
+
+# Camera sensors
+vendor/lib/libmmcamera_imx278.so
+vendor/lib/libmmcamera_ov8858.so
+
+# Fingerprint sensor
+etc/firmware/fingerprints.b00
+etc/firmware/fingerprints.b01
+etc/firmware/fingerprints.b02
+etc/firmware/fingerprints.b03
+etc/firmware/fingerprints.mdt
+
+# Sensors
+bin/psensord
+lib64/hw/sensors.hal.tof.so
+vendor/lib64/libcalmodule_memsic.so
+
+# Touchscreen
+etc/firmware/tp/15018/15018_FW_S3508_Samsung.img
+etc/firmware/tp/15018/15018_FW_S3508_Samsung_Old.img
+etc/firmware/tp/15018/15018_Limit_Samsung.img
