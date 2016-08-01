@@ -17,6 +17,7 @@
 #define LOG_TAG "FingerprintHAL"
 // #define LOG_NDEBUG 0
 
+#include <endian.h>
 #include <cutils/log.h>
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
