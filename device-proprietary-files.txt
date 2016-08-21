@@ -1,11 +1,11 @@
-# Audio
-etc/firmware/left.tfa9890.config
-etc/firmware/left.tfa9890.speaker
-etc/firmware/left.tfa9890_music_table.eq
-etc/firmware/left.tfa9890_music_table.preset
-etc/firmware/left.tfa9890_n1c2.patch
-etc/firmware/left.tfa9890_voice_table.eq
-etc/firmware/left.tfa9890_voice_table.preset
+# Audio - from stock, converted
+etc/firmware/left.tfa9890.config|aedbb9f65ae19cd309f329620c39b5070f7916f0
+etc/firmware/left.tfa9890.speaker|330a1778c81972a488efd96b4461f7f957e5fd5e
+etc/firmware/left.tfa9890_music_table.eq|5dd2161117b2efa7484c591f34bc2db61fe1f241
+etc/firmware/left.tfa9890_music_table.preset|f2857ce87e8f6099d0d22d88a5d7c72f6337773c
+etc/firmware/left.tfa9890_n1c2.patch|581d987516c4678149bcd72d13eff2f89391fb6e
+etc/firmware/left.tfa9890_voice_table.eq|e34df2c3a4af6002def1e4523f8c0f3352dc3c37
+etc/firmware/left.tfa9890_voice_table.preset|0b3405e6480afcd9916406b78545cde962308d61
 
 # Camera
 vendor/lib/libimage_stability.so
