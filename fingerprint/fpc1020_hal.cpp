@@ -147,15 +147,18 @@ static int fingerprint_set_active_group(struct fingerprint_device *dev,
     return 0;
 }
 
-static int fingerprint_enumerate(struct fingerprint_device *dev,
-                                 fingerprint_finger_id_t *results,
-                                 uint32_t *max_size)
+static int fingerprint_enumerate(struct fingerprint_device *dev)
 {
     android::Vector<Fpc1020Sensor::EnrolledFingerprint> fps;
     android::Vector<Fpc1020Sensor::EnrolledFingerprint>::iterator iter;
     fpc1020_device_t *device = (fpc1020_device_t *) dev;
-    int ret = to_impl(dev)->getEnrolledFingerprints(fps);
+    fingerprint_notify_t notify = fingerprint_get_notify(dev);
 
+    if (!notify) {
+        return 0;
+    }
+
+    int ret = to_impl(dev)->getEnrolledFingerprints(fps);
     if (ret != 0) {
         ALOGE("Getting enrolled fingerprints failed: %d", ret);
         return ret;
@@ -169,13 +172,13 @@ static int fingerprint_enumerate(struct fingerprint_device *dev,
         }
     }
 
-    if (*max_size == 0) {
-        *max_size = fps.size();
-    } else {
-        for (size_t i = 0; i < *max_size && i < fps.size(); i++) {
-            results[i].fid = fps[i].fid;
-            results[i].gid = fps[i].gid;
-        }
+    for (size_t i = 0; i < fps.size(); i++) {
+        fingerprint_msg_t msg;
+        msg.type = FINGERPRINT_TEMPLATE_ENUMERATING;
+        msg.data.enumerated.finger.fid = fps[i].fid;
+        msg.data.enumerated.finger.gid = fps[i].gid;
+        msg.data.enumerated.remaining_templates = fps.size() - 1 - i;
+        notify(&msg);
     }
 
     return 0;
